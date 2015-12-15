@@ -8,7 +8,7 @@ Provide a selectable list show and hide with animation
 ## Usage
 
 1. Download the zip and copy the folder `KMSelectionView` into your project
-2. Initialization:
+2. In your project:
   1. Use default options:
   
     ```objc
