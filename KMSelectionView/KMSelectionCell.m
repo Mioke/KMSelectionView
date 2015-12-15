@@ -54,7 +54,7 @@
     self.checkImage.userInteractionEnabled = NO;
     
     [self.checkImage setImage:check forState:UIControlStateSelected];
-    [self.checkImage setImage:self.delegate.options[KMPSV_Unselected_image] forState:UIControlStateNormal];
+    [self.checkImage setImage:self.delegate.options[KMSV_Unselected_image] forState:UIControlStateNormal];
     
     [self.contentView addSubview:self.checkImage];
     
@@ -68,18 +68,18 @@
     
     _delegate = delegate;
     
-    if (_delegate.options[KMPSV_Text_alignment]) {
-        self.titleLabel.textAlignment = (NSTextAlignment)([self.delegate.options[KMPSV_Text_alignment] integerValue]);
+    if (_delegate.options[KMSV_Text_alignment]) {
+        self.titleLabel.textAlignment = (NSTextAlignment)([self.delegate.options[KMSV_Text_alignment] integerValue]);
     }
-    if (_delegate.options[KMPSV_Selected_image]) {
-        [self.checkImage setImage:_delegate.options[KMPSV_Selected_image] forState:UIControlStateSelected];
+    if (_delegate.options[KMSV_Selected_image]) {
+        [self.checkImage setImage:_delegate.options[KMSV_Selected_image] forState:UIControlStateSelected];
     } else {
         // TODO: with default image
         UIImage *check = [UIImage imageNamed:@"list_select"];
         [self.checkImage setImage:check forState:UIControlStateSelected];
     }
-    if (_delegate.options[KMPSV_Unselected_image]) {
-        [self.checkImage setImage:self.delegate.options[KMPSV_Unselected_image] forState:UIControlStateNormal];
+    if (_delegate.options[KMSV_Unselected_image]) {
+        [self.checkImage setImage:self.delegate.options[KMSV_Unselected_image] forState:UIControlStateNormal];
     } else {
         // same
     }

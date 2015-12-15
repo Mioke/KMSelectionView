@@ -41,13 +41,22 @@
                                     <action selector="changeDirection:" destination="BYZ-38-t0r" eventType="valueChanged" id="6o5-Ck-jSd"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From direction:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLS-p5-L8J">
+                                <rect key="frame" x="242" y="470" width="116" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.9080376059322034" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="OLS-p5-L8J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3p6-Eh-2pR"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="2F8-KB-DHK" secondAttribute="bottom" constant="20" id="8N0-JA-FEM"/>
                             <constraint firstItem="vvg-CM-dXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Yq-xN-QDU"/>
                             <constraint firstItem="2F8-KB-DHK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FJE-bs-MW6"/>
+                            <constraint firstItem="vvg-CM-dXc" firstAttribute="top" secondItem="OLS-p5-L8J" secondAttribute="bottom" constant="14" id="lPb-kP-Rzc"/>
                             <constraint firstItem="2F8-KB-DHK" firstAttribute="top" secondItem="vvg-CM-dXc" secondAttribute="bottom" constant="17" id="tq0-w6-hwn"/>
                         </constraints>
                     </view>

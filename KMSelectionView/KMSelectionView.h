@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-#define KMPSV_Selected_image @"selected_image"
-#define KMPSV_Unselected_image @"unselected_image"
-#define KMPSV_Text_alignment @"text_alingment"
+#define KMSV_Selected_image @"selected_image"
+#define KMSV_Unselected_image @"unselected_image"
+#define KMSV_Text_alignment @"text_alingment"
 
 /**
  *  方向枚举

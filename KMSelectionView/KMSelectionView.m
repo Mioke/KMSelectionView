@@ -107,15 +107,15 @@
 - (void)setSelectedImage:(UIImage *)selectedImage unselectedImage:(UIImage *)unselectedImage {
     
     if (selectedImage) {
-        [self.options setObject:selectedImage forKey:KMPSV_Selected_image];
+        [self.options setObject:selectedImage forKey:KMSV_Selected_image];
     }
     if (unselectedImage) {
-        [self.options setObject:unselectedImage forKey:KMPSV_Unselected_image];
+        [self.options setObject:unselectedImage forKey:KMSV_Unselected_image];
     }
 }
 
 - (void)setCellTextAlignment:(NSTextAlignment)alignment {
-    [self.options setObject:@(alignment) forKey:KMPSV_Text_alignment];
+    [self.options setObject:@(alignment) forKey:KMSV_Text_alignment];
 }
 
 - (void)setCellSelectedWithIndex:(NSInteger)index {
