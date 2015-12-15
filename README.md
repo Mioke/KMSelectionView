@@ -19,7 +19,8 @@ Provide a selectable list show and hide with animation
                                        options:nil];
     ```
     Default style looks like:
-    ![defaultType]()
+    
+    ![defaultType](https://github.com/Mioke/KMSelectionView/blob/master/gifdemo/Screenshot_defaultType.png)
   2. Change basic options:
   
      ```objc
