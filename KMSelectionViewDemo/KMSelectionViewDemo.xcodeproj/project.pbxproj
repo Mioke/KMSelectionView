@@ -94,7 +94,8 @@
 				A7CB3B3A1C1FBF480046E1AB /* KMSelectionCell.h */,
 				A7CB3B3B1C1FBF480046E1AB /* KMSelectionCell.m */,
 			);
-			path = KMSelectionView;
+			name = KMSelectionView;
+			path = ../KMSelectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
