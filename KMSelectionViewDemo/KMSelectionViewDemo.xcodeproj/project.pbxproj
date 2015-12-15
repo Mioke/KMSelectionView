@@ -89,10 +89,10 @@
 		A7CB3B331C1FBEEC0046E1AB /* KMSelectionView */ = {
 			isa = PBXGroup;
 			children = (
-				A7CB3B3A1C1FBF480046E1AB /* KMSelectionCell.h */,
-				A7CB3B3B1C1FBF480046E1AB /* KMSelectionCell.m */,
 				A7CB3B3D1C1FBF960046E1AB /* KMSelectionView.h */,
 				A7CB3B3E1C1FBF960046E1AB /* KMSelectionView.m */,
+				A7CB3B3A1C1FBF480046E1AB /* KMSelectionCell.h */,
+				A7CB3B3B1C1FBF480046E1AB /* KMSelectionCell.m */,
 			);
 			path = KMSelectionView;
 			sourceTree = "<group>";

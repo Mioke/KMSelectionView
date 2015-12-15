@@ -140,25 +140,25 @@
     
     if (!self.transparentButton) {
         
-        CGFloat height;
+//        CGFloat height;
+//        
+//        if ([view isKindOfClass:[UIScrollView class]]) {
+//            height = ((UIScrollView *)view).contentSize.height;
+//            height = height >= view.frame.size.height ? height : view.frame.size.height;
+//        } else {
+//            height = view.frame.size.height;
+//        }
+//        
+//        CGRect frame;
+//        if (direction == KMDirectionUp) {
+//            frame = CGRectMake(0, to.y, view.frame.size.width, height - to.y);
+//        } else if (direction == KMDirectionDown) {
+//            frame = CGRectMake(0, 0, view.frame.size.width, to.y + self.frame.size.height);
+//        } else {
+//            frame = CGRectMake(0, 0, view.frame.size.width, height);
+//        }
         
-        if ([view isKindOfClass:[UIScrollView class]]) {
-            height = ((UIScrollView *)view).contentSize.height;
-            height = height >= view.frame.size.height ? height : view.frame.size.height;
-        } else {
-            height = view.frame.size.height;
-        }
-        
-        CGRect frame;
-        if (direction == KMDirectionUp) {
-            frame = CGRectMake(0, to.y, view.frame.size.width, height - to.y);
-        } else if (direction == KMDirectionDown) {
-            frame = CGRectMake(0, 0, view.frame.size.width, to.y + self.frame.size.height);
-        } else {
-            frame = CGRectMake(0, 0, view.frame.size.width, height);
-        }
-        
-        self.transparentButton = [[UIButton alloc] initWithFrame:frame];
+        self.transparentButton = [[UIButton alloc] initWithFrame:view.bounds];
         if (self.backColor) {
             self.transparentButton.backgroundColor = self.backColor;
         }
@@ -175,13 +175,13 @@
     frame = self.tableView.frame;
     
     if (direction == KMDirectionUp) {
-        frame.origin.y = - frame.size.height;
+        frame.origin = CGPointMake(0, - frame.size.height);
     } else if (direction == KMDirectionDown) {
-        frame.origin.y = frame.size.height;
+        frame.origin = CGPointMake(0, frame.size.height);
     } else if (direction == KMDirectionLeft) {
-        frame.origin.x = - frame.size.width;
+        frame.origin = CGPointMake(- frame.size.width, 0);
     } else if (direction == KMDirectionRight) {
-        frame.origin.x = frame.size.height;
+        frame.origin = CGPointMake(frame.size.width, 0);
     }
     
     self.tableView.frame = frame;
@@ -220,7 +220,7 @@
     } else if (_appearenceDirection == KMDirectionLeft) {
         frame.origin.x = - frame.size.width;
     } else if (_appearenceDirection == KMDirectionRight) {
-        frame.origin.x = frame.size.height;
+        frame.origin.x = frame.size.width;
     }
     
     [UIView animateWithDuration:0.3
